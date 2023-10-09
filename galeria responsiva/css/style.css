@@ -1,0 +1,48 @@
+/* procedimento padrão para todo o site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo para cada imagem */
+.img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estilo para dispositivos menores (máximo de 768px) */
+@media screen and (max-width: 768px) {
+    .img {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
